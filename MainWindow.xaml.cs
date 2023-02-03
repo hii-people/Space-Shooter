@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Threading;
+using System.Media;
 
 namespace Space_Shooter
 {
@@ -201,6 +202,16 @@ namespace Space_Shooter
                 Canvas.SetTop(newBullet, Canvas.GetTop(player) - newBullet.Height);
 
                 MyCanvas.Children.Add(newBullet);
+                // C:\Users\gregp\Source\Repos\Space-Shooter\Audio\laserShoot.wav
+                //new Uri("pack://application:,,,/Images/player.png")
+                SoundPlayer soundPlayer = new SoundPlayer(@"C:\Users\gregp\Source\Repos\Space-Shooter\Audio\laserShoot.wav");
+
+                soundPlayer.PlaySync(); // can also use soundPlayer.PlaySync()
+
+
+
+
+
             }
         }
 
