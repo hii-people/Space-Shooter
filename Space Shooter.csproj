@@ -103,5 +103,10 @@
     <Resource Include="Images\player.png" />
     <Resource Include="Images\purple.png" />
   </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Audio\hitHurt.wav" />
+    <Content Include="Audio\laserShoot.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
